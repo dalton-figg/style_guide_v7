@@ -1,0 +1,16 @@
+@mixin block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex($dir: null, $justify: null, $align: null) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-basis($basis){
+  flex-basis: $basis;
+}

@@ -1,0 +1,49 @@
+%btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.35s linear;
+}
+
+.default, .error, .info, .success, .warning{
+  @extend %btn;
+}
+
+.default {
+  background-color: $light-blue;
+  &:hover {
+    background-color: lighten($light-blue, 15%);
+  }
+}
+
+.error {
+  background-color: $pink;
+  &:hover {
+    background-color: lighten($pink, 15%);
+  }
+}
+
+.info {
+  background-color: $purple;
+  &:hover {
+    background-color: lighten($purple, 15%);
+  }
+}
+
+.success {
+  background-color: $dark-green;
+  &:hover {
+    background-color: lighten($dark-green, 15%);
+  }
+}
+
+.warning {
+  background-color: $orange;
+  &:hover {
+    background-color: lighten($orange, 15%);
+  }
+}
